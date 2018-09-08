@@ -1,0 +1,23 @@
+LPI  Devops Tool Engineer              || HARI HI OM ||                           Date: 09/08/2018
+
+Vagrant :
+
+==> It's a tool for Building and Managing Virtual Machine Environments.
+==> Machines are provisioned on top of a Provider 
+        Ex:- Vmware,Oracle VirtualBox, Dockers ,Hyper-V ,AWS etc 
+
+==> Provisioning tools can be used to automate tasks on machines , we can use tools such as SHELL Scripts, Chef , Puppet etc.
+
+==>Custom Providers are supported , but they must be installed first and need to ensure all pluggins are installed for it to work.
+
+Some Vagrant Commands:
+
+vagrant init :Initializes the Current directory to be  a Vagrant environment by creating a Vagrantfile
+vagrant up   : Creates and configures guest machines according to your Vagrantfile.
+vagrant destroy : Stops the running and destroys all resources that were created
+vagrant validate  : Validates your vagrantfile 
+vagrant provision  :  Runs any configured provisioner 
+vagrant reload  : Runs a halt followed by an up 
+vagrant status     :  This will tell you the state of the machines 
+vagrant ssh :  SSH into a running vagrant machine 
+
