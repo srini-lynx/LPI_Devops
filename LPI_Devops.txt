@@ -25,3 +25,17 @@ The Best part of VAGRANT is irrespective of Provider the command we are going to
 
 
 Note: !!!!!  Manage One Vagrant File per Project   !!!!!
+
+
+Ex: Docker provisioner 
+https://www.vagrantup.com/docs/docker/basics.html
+
+Vagrant.configure("2") do |config|
+  config.vm.provider "docker" do |d|
+    d.image = "foo/bar"
+  end
+end
+
+When vagrant up --provider=docker is run, this will bring up the image foo/bar.
+
+This is useful for extra components of your application that it might depend on: databases, queues, etc. Typically, the primary application you are working on is built with a Dockerfile, or via a container with SSH.
