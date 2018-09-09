@@ -21,3 +21,7 @@ vagrant reload  : Runs a halt followed by an up
 vagrant status     :  This will tell you the state of the machines 
 vagrant ssh :  SSH into a running vagrant machine 
 
+The Best part of VAGRANT is irrespective of Provider the command we are going to use is the same . Ex: vagrant up , vagrant provision , vagrant destroy ..etc.
+
+
+Note: !!!!!  Manage One Vagrant File per Project   !!!!!
