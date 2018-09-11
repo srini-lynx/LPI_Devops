@@ -10,6 +10,16 @@ Vagrant :
 
 ==>Custom Providers are supported , but they must be installed first and need to ensure all pluggins are installed for it to work.
 
+===> In the Centos 7 Machine we need to make sure below updates are in place for Docker to Work as Provisoner for Vagrant 
+
+#Install Docker from the Repository 
+ yum install docker
+#Some time docker will error unable to run , so Ensure you have the Latest Kernel 
+ yum install kernel
+#Install the Vagrant From HashiCorp official site with below command or use wget to install with the mentioned URL to get the RPM and After use yum install to install the RPM
+ yum install -y https://releases.hashicorp.com/vagrant/2.1.4/vagrant_2.1.4_x86_64.rpm
+ yum install -y vagrant_2.1.4_x86_64.rpm
+
 Some Vagrant Commands:
 
 vagrant init :Initializes the Current directory to be  a Vagrant environment by creating a Vagrantfile
